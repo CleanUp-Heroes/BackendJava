@@ -14,17 +14,32 @@ plugins {
 repositories {  // Claire : les sources de librairies
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+    // Ibtissem : Ajouter un repo gituhb pour inclure des dépendances pas disponible sur maven
 }
 
-dependencies { // claire : les types de dépenses dont on a besoin
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.3.3'  //creation de la librairie pour l'api 
     // Use JUnit test framework.
     testImplementation 'junit:junit:4.13.2' // claire: Junit c'est ce qu'on a besoin pas guava
 
     // This dependency is used by the application.
-    implementation 'com.google.guava:guava:30.1.1-jre' //(ici nous allons add nos librairies)
+    implementation 'com.google.guava:guava:30.1.1-jre'
 }
 
+/*
+Ibtissem : Si présent dans le fichier, cela indique la version Java a utilisé pour executer le projet gradle.
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+*/
+
+// Ibtissem : Cela definit où se trouve la classe main du projet
+group = 'fr.parisnanterre.rahim-adjedomole-barry' // Group ID
+// artifact = 'backendjava' // Artifact ID
+version = '0.0.1'
 application {
     // Define the main class for the application.
-    mainClass = 'BackendJava.App'
+    mainClass = 'fr.parisnanterre.rahimadjedomolebarry.backendjava.App'
 }
