@@ -11,17 +11,17 @@ plugins {
     id 'application'
 }
 
-repositories {
+repositories {  // Claire : les sources de librairies
     // Use Maven Central for resolving dependencies.
     mavenCentral()
 }
 
-dependencies {
+dependencies { // claire : les types de dépenses dont on a besoin
     // Use JUnit test framework.
-    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'junit:junit:4.13.2' // claire: Junit c'est ce qu'on a besoin pas guava
 
     // This dependency is used by the application.
-    implementation 'com.google.guava:guava:30.1.1-jre'
+    implementation 'com.google.guava:guava:30.1.1-jre' //(ici nous allons add nos librairies)
 }
 
 application {
