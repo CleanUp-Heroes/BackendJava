@@ -1,7 +1,7 @@
 name: Build
 
 on:                   #quel moment on va déclencher l'action
-  push:             #celà veut dire qu'on push dans la branche main et develop
+  push:             #cela veut dire qu'on push dans la branche main et develop
     branches:
       - main
       - develop
@@ -10,11 +10,11 @@ on:                   #quel moment on va déclencher l'action
       - main
 
 
-// création du job : ce qui va être lancé
+création du job : ce qui va être lancé
 jobs:
   build:
 
-    runs-on: ubuntu-latest    #lancer sur la dèrnière version d'unbutu
+    runs-on: ubuntu-latest    #lancer sur la derniere version d'unbutu
     permissions:
       contents: read
 
@@ -36,15 +36,4 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew build
 
-    # Test project
-   # - name: Run tests
-   #   run: ./gradlew test
-
-  # Upload JaCoCo coverage report to Codecov
-  #  - name: Upload coverage to Codecov
-   #   uses: codecov/codecov-action@v4
-    #  with:
-    #    token: ${{ secrets.CODECOV_TOKEN }}
-    #    files: ./build/reports/jacoco/test/jacocoTestReport.xml
-     #   fail_ci_if_error: true
-#verbose: true
+   
