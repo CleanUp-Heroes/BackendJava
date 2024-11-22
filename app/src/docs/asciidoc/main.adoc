@@ -10,7 +10,7 @@ Application pour encourager le tri des déchets.
 
 === Note
 
-Tested with Gradle 8.10.1 and Java 17.0.12.
+Tested with Gradle 8.5, 8.11 and Java 21
 
 === If you have `git` on your computer
 
