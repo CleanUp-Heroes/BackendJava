@@ -1,1 +1,46 @@
 = Backend APP
+
+== CleanUp Heroes
+Adjedomole, Barry, Rahim
+
+== Objectif de l'application
+Application pour encourager le tri des déchets.
+
+== How to install?
+
+=== Note
+
+Tested with Gradle 8.10.1 and Java 17.0.12.
+
+=== If you have `git` on your computer
+
+Simply run:
+[source,shell]
+----
+git clone https://github.com/CleanUp-Heroes/BackendJava.git
+----
+
+=== If you do not have `git` on your computer
+
+Go to https://github.com/CleanUp-Heroes/BackendJava.git, download the zip file, and uncompress it.
+
+== How to run?
+
+Simply run:
+[source,shell]
+----
+./gradlew run
+----
+
+== Here is the class diagram
+
+[plantuml, src/docs/asciidoc/models/diagram.puml, svg]
+....
+
+== Here is the source code of the main class:
+
+[source,java]
+.App source code
+----
+include::src/main/java/fr/parisnanterre/CleanUp-Heroes/BackendJava/App.java[]
+----
