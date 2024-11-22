@@ -93,3 +93,10 @@ application {
     // Define the main class for the application.
     mainClass = 'fr.parisnanterre.rahimadjedomolebarry.backendjava.App'
 }
+// edit the build task to generate the asciidoc pdf too
+tasks.named('asciidoctor').configure {
+    dependsOn tasks.named('asciidoctorPdf')
+}
+tasks.named('build').configure {
+    dependsOn tasks.named('asciidoctor')
+}
